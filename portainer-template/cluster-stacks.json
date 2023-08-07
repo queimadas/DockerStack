@@ -86,6 +86,24 @@
           "url": "https://github.com/queimadas/DockerStack",
           "stackfile": "cluster/stacks/geoserver-cluster.yaml"
         }
+      },
+      {
+        "type": 2,
+        "name": "stack-teste",
+        "title": "The GeoServer cluster to publish data compliant with the OGC services standard.",
+        "description": "The GeoServer application allows managing data sources and making them available through the OGC API as WMS and WFS services.",
+        "note": "This stack is mandatory and serves to manage the publication of data layers for TerraBrasilis databases.",
+        "categories": [
+          "application",
+          "service",
+          "API"
+        ],
+        "platform": "linux",
+        "logo": "https://raw.githubusercontent.com/terrabrasilis/docker-stacks/master/icons/backend.png",
+        "repository": {
+          "url": "https://github.com/queimadas/DockerStack",
+          "stackfile": "cluster/stacks/teste-cluster.yaml"
+        }
       }
     ]
   }
