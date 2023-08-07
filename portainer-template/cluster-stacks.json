@@ -90,8 +90,8 @@
       {
         "type": 2,
         "name": "stack-teste",
-        "title": "The GeoServer cluster to publish data compliant with the OGC services standard.",
-        "description": "The GeoServer application allows managing data sources and making them available through the OGC API as WMS and WFS services.",
+        "title": "Isso e um teste",
+        "description": "Isso e um teste",
         "note": "This stack is mandatory and serves to manage the publication of data layers for TerraBrasilis databases.",
         "categories": [
           "application",
