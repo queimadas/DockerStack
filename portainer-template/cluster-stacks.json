@@ -13,7 +13,7 @@
         "platform": "linux",
         "logo": "https://raw.githubusercontent.com/terrabrasilis/docker-stacks/master/icons/frontend.png",
         "repository": {
-          "url": "https://github.com/Terrabrasilis/docker-stacks",
+          "url": "https://github.com/queimadas/DockerStack/",
           "stackfile": "cluster/stacks/frontend.yaml"
         }
       },
@@ -29,7 +29,7 @@
         "platform": "linux",
         "logo": "https://raw.githubusercontent.com/terrabrasilis/docker-stacks/master/icons/frontend.png",
         "repository": {
-          "url": "https://github.com/Terrabrasilis/docker-stacks",
+          "url": "https://github.com/queimadas/DockerStack/",
           "stackfile": "cluster/stacks/backend.yaml"
         }
       },
@@ -46,7 +46,7 @@
         "platform": "linux",
         "logo": "https://raw.githubusercontent.com/terrabrasilis/docker-stacks/master/icons/backend.png",
         "repository": {
-          "url": "https://github.com/Terrabrasilis/docker-stacks",
+          "url": "https://github.com/queimadas/DockerStack/",
           "stackfile": "cluster/stacks/proxy.yaml"
         }
       },
@@ -65,7 +65,7 @@
         "platform": "linux",
         "logo": "https://raw.githubusercontent.com/terrabrasilis/docker-stacks/master/icons/frontend.png",
         "repository": {
-          "url": "https://github.com/Terrabrasilis/docker-stacks",
+          "url": "https://github.com/queimadas/DockerStack/",
           "stackfile": "cluster3/stacks/pg-client.yaml"
         }
       },
@@ -83,7 +83,7 @@
         "platform": "linux",
         "logo": "https://raw.githubusercontent.com/terrabrasilis/docker-stacks/master/icons/backend.png",
         "repository": {
-          "url": "https://github.com/Terrabrasilis/docker-stacks",
+          "url": "https://github.com/queimadas/DockerStack/",
           "stackfile": "cluster/stacks/geoserver-cluster.yaml"
         }
       }
