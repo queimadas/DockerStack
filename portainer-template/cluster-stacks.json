@@ -89,10 +89,9 @@
       },
       {
         "type": 2,
-        "name": "stack-teste",
-        "title": "Isso e um teste",
-        "description": "Isso e um teste",
-        "note": "This stack is mandatory and serves to manage the publication of data layers for TerraBrasilis databases.",
+        "name": "BDQueimadas",
+        "title": "The stack service for BD Queimadas App and service",
+        "description": "The stack service for BD Queimadas App and service",
         "categories": [
           "application",
           "service",
@@ -102,7 +101,7 @@
         "logo": "https://raw.githubusercontent.com/terrabrasilis/docker-stacks/master/icons/backend.png",
         "repository": {
           "url": "https://github.com/queimadas/DockerStack",
-          "stackfile": "cluster/stacks/teste-cluster.yaml"
+          "stackfile": "cluster/stacks/bdqueimadas.yaml"
         }
       }
     ]
