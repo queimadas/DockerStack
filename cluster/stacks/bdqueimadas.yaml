@@ -1,9 +1,11 @@
 version: '3.2'
 services:
   bdqueimadas:
-    image: bdqueimadas:v1.0.0
+    image: terrabrasilis/bdqueimadas-app:v1.0.0
     ports:
       - "39002"
+    volumes:
+      - /data/apps/bdqueimadas/configurations:/usr/bdqueimadas/configurations
     networks:
       - proxy
     deploy:
@@ -12,9 +14,11 @@ services:
         condition: on-failure
 
   bdq-exportacao:
-    image: bdq-exportacao:v1.0.0
+    image: terrabrasilis/bdqueimadas-exportacao:v1.0.0
     ports:
       - "8000"
+    volumes:
+      - /data/apps/bdqueimadas_exportacao/configurations/config.ini:/usr/exportacao/config.ini
     networks:
       - proxy
     deploy:
