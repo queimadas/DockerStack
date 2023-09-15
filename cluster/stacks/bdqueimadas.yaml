@@ -14,7 +14,7 @@ services:
         condition: on-failure
 
   bdq-exportacao:
-    image: terrabrasilis/bdqueimadas-exportacao:v1.0.0
+    image: "otavioabreu27/recovery_exportador:v1.0.15"
     ports:
       - "8000"
     volumes:
