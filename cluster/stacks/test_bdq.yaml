@@ -4,7 +4,7 @@ services:
     image: otavioabreu27/recovery_bdq:v1.0.11
     ports:
       - "39002:39003"
-    volmes:
+    volumes:
       - /data/apps/bdqueimadas/configurations:/usr/bdqueimadas/configurations
     networks:
       - proxy
