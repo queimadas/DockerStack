@@ -103,6 +103,23 @@
           "url": "https://github.com/queimadas/DockerStack",
           "stackfile": "cluster/stacks/bdqueimadas.yaml"
         }
+      },
+      {
+        "type": 2,
+        "name": "Test BDQ",
+        "title": "Test stack for BDQ",
+        "description": "Test stack for BDQ",
+        "categories": [
+          "application",
+          "service",
+          "API"
+        ],
+        "platform": "linux",
+        "logo": "https://raw.githubusercontent.com/terrabrasilis/docker-stacks/master/icons/backend.png",
+        "repository": {
+          "url": "https://github.com/queimadas/DockerStack",
+          "stackfile": "cluster/stacks/bdqueimadas.yaml"
+        }
       }
     ]
   }
