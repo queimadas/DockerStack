@@ -1,7 +1,7 @@
 version: '3.2'
 services:
   teste-bdq:
-    image: otavioabreu27/recovery_bdq:v1.0.11
+    image: otavioabreu27/recovery_bdq:v1.0.13
     ports:
       - "39002:39003"
     volumes:
