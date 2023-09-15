@@ -1,7 +1,7 @@
 version: '3.2'
 services:
   bdqueimadas:
-    image: otavioabreu27/recovery_bdq:v1.0.15
+    image: terrabrasilis/bdqueimadas-app:v1.0.0
     ports:
       - "39002"
     volumes:
@@ -14,7 +14,7 @@ services:
         condition: on-failure
 
   bdq-exportacao:
-    image: "otavioabreu27/recovery_exportador:v1.0.15"
+    image: otavioabreu27/recovery_exportador:v1.0.15
     ports:
       - "8000"
     volumes:
