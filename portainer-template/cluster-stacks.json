@@ -106,9 +106,9 @@
       },
       {
         "type": 2,
-        "name": "Test BDQ",
-        "title": "Test stack for BDQ",
-        "description": "Test stack for BDQ",
+        "name": "Exportador BDQ",
+        "title": "The stack for the service of data exportation of BD Queimadas",
+        "description": "The stack for the service of data exportation of BD Queimadas",
         "categories": [
           "application",
           "service",
@@ -118,7 +118,7 @@
         "logo": "https://raw.githubusercontent.com/terrabrasilis/docker-stacks/master/icons/backend.png",
         "repository": {
           "url": "https://github.com/queimadas/DockerStack",
-          "stackfile": "cluster/stacks/test_bdq.yaml"
+          "stackfile": "cluster/stacks/exportador_bdq.yaml"
         }
       }
     ]

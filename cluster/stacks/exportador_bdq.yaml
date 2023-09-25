@@ -1,0 +1,60 @@
+version: '3.2'
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    environment:
+      - RABBITMQ_DEFAULT_USER=user
+      - RABBITMQ_DEFAULT_PASS=password
+    ports:
+      - "5672"
+      - "5671"
+      - "15672"
+      - "15671"
+    networks:
+      - proxy
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+
+  consumer:
+    image: otavioabreu27/consumer_exportador_bdq:v1.0.1
+    ports:
+      - "5672"
+      - "5671"
+      - "15672"
+      - "15671"
+    volumes:
+      - /data/apps/exportador_bdq/configurations/consumer/config.toml:/app/config.toml
+      - /data/apps/exportador_bdq/configurations/consumer/logs.txt:/app/logs.txt
+    networks:
+      - proxy
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+    depends_on:
+      - rabbitmq
+
+  producer:
+    image: otavioabreu27/producer_exportador_bdq:v1.0.1
+    ports:
+      - "1234"
+      - "5672"
+      - "5671"
+      - "15672"
+      - "15671"
+    volumes:
+      - /data/apps/exportador_bdq/configurations/producer/config.toml:/app/config.toml
+    networks:
+      - proxy
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+    depends_on:
+      - rabbitmq
+
+networks:
+  proxy:
+    external: true
