@@ -34,6 +34,9 @@ services:
       replicas: 1
       restart_policy:
         condition: on-failure
+      resources:
+        limits:
+          nproc: 30
     depends_on:
       - rabbitmq
 
