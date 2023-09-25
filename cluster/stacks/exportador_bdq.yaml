@@ -2,6 +2,7 @@ version: '3.2'
 services:
   rabbitmq:
     image: rabbitmq:3-management
+    privileged: true
     environment:
       - RABBITMQ_DEFAULT_USER=user
       - RABBITMQ_DEFAULT_PASS=password
