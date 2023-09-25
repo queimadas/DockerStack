@@ -2,7 +2,6 @@ version: '3.2'
 services:
   rabbitmq:
     image: bitnami/rabbitmq:latest
-    privileged: true
     environment:
       - RABBITMQ_USERNAME=user
       - RABBITMQ_PASSWORD=password
@@ -28,15 +27,14 @@ services:
     volumes:
       - /data/apps/exportador_bdq/configurations/consumer/config.toml:/app/config.toml
       - /data/apps/exportador_bdq/configurations/consumer/logs.txt:/app/logs.txt
+    environment:
+      OMP_NUM_THREADS: 255
     networks:
       - proxy
     deploy:
       replicas: 1
       restart_policy:
         condition: on-failure
-      resources:
-        limits:
-          nproc: 30
     depends_on:
       - rabbitmq
 
