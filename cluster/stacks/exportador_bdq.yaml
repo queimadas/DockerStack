@@ -18,7 +18,7 @@ services:
         condition: on-failure
 
   consumer:
-    image: otavioabreu27/consumer_exportador_bdq:v1.0.1
+    image: otavioabreu27/consumer_exportador_bdq:v1.0.3
     ports:
       - "5672"
       - "5671"
