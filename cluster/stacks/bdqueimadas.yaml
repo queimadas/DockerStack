@@ -1,24 +1,11 @@
 version: '3.2'
 services:
   bdqueimadas:
-    image: terrabrasilis/bdqueimadas-app:v1.0.0
+    image: otavioabreu27/recovery_bdq:v1.0.15
     ports:
       - "39002"
     volumes:
       - /data/apps/bdqueimadas/configurations:/usr/bdqueimadas/configurations
-    networks:
-      - proxy
-    deploy:
-      replicas: 1
-      restart_policy:
-        condition: on-failure
-
-  bdq-exportacao:
-    image: otavioabreu27/recovery_exportador:v1.0.15
-    ports:
-      - "8000"
-    volumes:
-      - /data/apps/bdqueimadas_exportacao/configurations/config.ini:/usr/exportacao/config.ini
     networks:
       - proxy
     deploy:
