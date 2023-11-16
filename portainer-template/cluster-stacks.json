@@ -120,6 +120,22 @@
           "url": "https://github.com/queimadas/DockerStack",
           "stackfile": "cluster/stacks/exportador_bdq.yaml"
         }
+      },
+      {
+        "type": 2,
+        "name": "AQ1Km",
+        "title": "The stack for the service of AQ1Km Application",
+        "description": "TThe stack for the service of AQ1Km Application",
+        "categories": [
+            "Apps",
+            "frontend"
+        ],
+        "platform": "linux",
+        "logo": "https://raw.githubusercontent.com/terrabrasilis/docker-stacks/master/icons/frontend.png",
+        "repository": {
+          "url": "https://github.com/queimadas/DockerStack",
+          "stackfile": "cluster/stacks/aq1km.yaml"
+        }
       }
     ]
   }
