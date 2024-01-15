@@ -16,7 +16,7 @@ services:
         condition: on-failure
 
   portal:
-    image: terrabrasilis/queimadas-portal:v1.0.27
+    image: terrabrasilis/queimadas-portal:v1.0.28
     ports:
       - "80"
     networks:
