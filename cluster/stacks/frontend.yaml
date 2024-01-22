@@ -3,8 +3,8 @@ services:
 
   # frontend app
   situacao-atual:
-    image: terrabrasilis/queimadas-situacao-atual:v1.0.4
-    ports:ito
+    image: terrabrasilis/queimadas-situacao-atual:v1.0.6
+    ports:
       - "80"
     networks:
       - proxy
