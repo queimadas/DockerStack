@@ -4,7 +4,7 @@ services:
   # frontend app
   situacao-atual:
     image: terrabrasilis/queimadas-situacao-atual:v1.0.4
-    ports:
+    ports:ito
       - "80"
     networks:
       - proxy
@@ -16,7 +16,7 @@ services:
         condition: on-failure
 
   portal:
-    image: terrabrasilis/queimadas-portal:v1.0.29
+    image: terrabrasilis/queimadas-portal:v1.0.31
     ports:
       - "80"
     networks:
