@@ -1,13 +1,13 @@
 version: '3.2'
 services:
   aq1km:
-    image: hlvprado/queimadas-aq1km:v1.0.2
+    image: hlvprado/queimadas-aq1km:v1.0.3
     ports:
       - "5000:5000"
     networks:
       - proxy
     volumes:
-      - /data/apps/aq1km/aq1km_biomas.csv:/app/project/assets/data/aq1km_biomas.csv
+      - /data/apps/aq1km/aq1km_biomas.csv:/app/project/static/data/aq1km_biomas.csv
     deploy:
       replicas: 1
       restart_policy:
