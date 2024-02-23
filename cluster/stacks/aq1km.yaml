@@ -1,7 +1,7 @@
 version: '3.2'
 services:
   aq1km:
-    image: hlvprado/queimadas-aq1km:v1.0.3
+    image: hlvprado/queimadas-aq1km:v1.0.2
     ports:
       - "5000:5000"
     networks:
